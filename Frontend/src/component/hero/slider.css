@@ -1,0 +1,97 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide:hover{
+    cursor: grab;
+  }
+  .swiper-slide:active{
+    cursor: grabbing;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  @media (max-width: 768px) {
+    .img-slider img {
+      width: 100%; /* اجعل الصورة تمتد بالكامل */
+      height: auto;
+      object-fit: cover; /* يمنع التشوه */
+    }
+  
+    .box-slider {
+      left: 5%; /* تقليل المسافة الجانبية */
+      width: 90%; /* عرض أكبر ليظهر المحتوى بشكل جيد */
+      text-align: center; /* توسيط النص */
+    }
+  
+    .box-slider h5 {
+      font-size: 16px; /* تصغير العنوان */
+    }
+  
+    .box-slider h3 {
+      font-size: 24px; /* تصغير حجم النص */
+    }
+  
+    .box-slider h4 {
+      font-size: 18px;
+    }
+  
+    .box-slider p {
+      font-size: 14px;
+    }
+  
+    .box-slider button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .box-slider {
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .box-slider h5 {
+      font-size: 14px;
+     justify-content: right;
+    }
+  
+    .box-slider h3 {
+      font-size: 20px;
+    }
+  
+    .box-slider h4 {
+      font-size: 16px;
+      justify-content: left;
+    }
+  
+    .box-slider p {
+      font-size: 12px;
+    }
+  
+    .box-slider button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  
+  
